@@ -1045,7 +1045,7 @@ video {
   text-wrap: balance;
 }
 
-/* Los tres actos de una experiencia; .is-mine marca mi parte */
+/* Los tres actos de una experiencia */
 .acts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1062,11 +1062,6 @@ video {
 
 .acts li + li {
   border-left: 2px solid var(--color-divider);
-}
-
-.acts li.is-mine {
-  background: var(--color-accent);
-  color: var(--color-bg);
 }
 
 .acts__num {
@@ -1092,23 +1087,11 @@ video {
   font-weight: 600;
 }
 
-.acts__tag {
-  padding: 1px 8px;
-  background: var(--color-bg);
-  color: var(--color-accent-700);
-  font-size: 11px;
-}
-
 .acts p {
   margin-top: 8px;
   font-size: 15px;
   line-height: 1.5;
   color: var(--color-neutral-800);
-}
-
-.acts li.is-mine .acts__num,
-.acts li.is-mine p {
-  color: var(--color-bg);
 }
 
 /* Cifras grandes */
