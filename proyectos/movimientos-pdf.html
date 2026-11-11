@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movimientos en PDF — Pascualtobias Rendon</title>
+  <meta name="description" content="Caso UI/UX: un flujo para descargar los movimientos de un banco digital en PDF sin salir de la app. Investigación, flujo, prototipo en Figma y pruebas de usabilidad con 9 personas.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Movimientos en PDF — Pascualtobias Rendon">
+  <meta name="theme-color" content="#f3f2f2">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <script src="../assets/js/main.js?v=4" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="../index.html">Pascualtobias Rendon</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html#proyectos" aria-current="true">Proyectos</a></li>
+          <li><a href="../sobre-mi.html">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Fuentes: tablero de FigJam «Pascual retos» (Reto 3) y archivo de Figma «Pruebasux» (prototipo final y
+       presentación de las pruebas). Imágenes: assets/img/uiux. Sin nombres de participantes. -->
+  <main id="contenido" class="wrap">
+    <div class="case-bar">
+      <a class="btn btn-ghost" href="../index.html#proyectos">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="square" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Todos los proyectos
+      </a>
+      <span class="case-bar__count">Proyecto 04 / 04</span>
+    </div>
+
+    <header class="case-head">
+      <span class="tag tag-accent">Reto de diseño · UI/UX</span>
+      <h1 style="view-transition-name: title-movimientos-pdf">Movimientos en PDF</h1>
+      <p class="case-head__lead">
+        Un reto de diseño de producto: que los clientes de un banco digital descarguen sus movimientos en PDF sin salir de
+        la app ni escribirle a soporte. Lo resolví de principio a fin: investigación, flujo, prototipo en Figma y pruebas de
+        usabilidad con 9 personas.
+      </p>
+    </header>
+
+    <dl class="case-meta">
+      <div><dt class="eyebrow">Tipo</dt><dd>Reto académico, sobre un brief ficticio</dd></div>
+      <div><dt class="eyebrow">Mi rol</dt><dd>Diseño UX/UI, individual</dd></div>
+      <div><dt class="eyebrow">Plataforma</dt><dd>App móvil (iOS y Android)</dd></div>
+      <div><dt class="eyebrow">Herramientas</dt><dd>Figma · FigJam · Maze</dd></div>
+      <div><dt class="eyebrow">Año</dt><dd>2026</dd></div>
+    </dl>
+
+    <div class="media" style="view-transition-name: cover-movimientos-pdf">
+      <img src="../assets/img/uiux/portada.webp" alt="Cuatro pantallas del prototipo: movimientos con resumen de gasto, selección de período, revisión del documento y PDF listo">
+    </div>
+
+    <!-- 01 · EL RETO -->
+    <section class="block" aria-labelledby="reto">
+      <div class="block__head">
+        <span class="num">01</span>
+        <h2 id="reto">El reto</h2>
+      </div>
+      <div class="block__body">
+        <p>
+          El brief plantea un banco digital en Estados Unidos que recibe muchos tickets de soporte por una tarea simple:
+          descargar el historial de movimientos, para el contador, una solicitud de crédito o las finanzas propias. La función
+          existe, pero está escondida y obliga a ir a la web o escribirle a un agente. La meta del brief: bajar esos tickets un
+          40 % en dos trimestres.
+        </p>
+        <blockquote class="quote">
+          «El problema central no es la pantalla de descarga: es encontrarla.»
+          <cite>Cómo planteé el reto</cite>
+        </blockquote>
+        <ul class="bullets">
+          <li><span><strong>Encontrarla sola,</strong> sin preguntarle a nadie.</span></li>
+          <li><span><strong>Saber qué pide</strong> antes de confirmar: período, movimientos y tipo de documento.</span></li>
+          <li><span><strong>Entender la espera</strong> mientras el archivo se genera.</span></li>
+          <li><span><strong>Salir de un error</strong> sin empezar todo de nuevo.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 02 · INVESTIGACIÓN -->
+    <section class="block" aria-labelledby="investigacion">
+      <div class="block__head">
+        <span class="num">02</span>
+        <h2 id="investigacion">Investigación</h2>
+      </div>
+      <div class="block__body">
+        <p>Comparé cómo resuelven el mismo paso tres apps de banca y me quedé con una idea de cada una.</p>
+        <dl class="gestures">
+          <div><dt>Revolut</dt><dd>El histórico llega hasta la fecha de apertura de la cuenta, en vez de un límite inventado, y el rango es libre.</dd></div>
+          <div><dt>Chase</dt><dd>La exportación solo existe en la web de escritorio: la prueba de que el problema del reto es real.</dd></div>
+          <div><dt>RappiPay</dt><dd>Separa bien los meses y los años, pero la opción queda escondida detrás de varios menús.</dd></div>
+        </dl>
+        <p>De ahí salieron cinco reglas para el diseño:</p>
+        <ol class="flow">
+          <li><span class="num">01</span><h3>Donde ya está mirando</h3><p>La descarga vive junto a los movimientos, no en Ajustes.</p></li>
+          <li><span class="num">02</span><h3>Sin sorpresas</h3><p>Antes de confirmar se ve el período, los movimientos y el formato.</p></li>
+          <li><span class="num">03</span><h3>La espera se explica</h3><p>La app dice cuánto puede tardar y qué pasa si sales.</p></li>
+          <li><span class="num">04</span><h3>Todo error tiene salida</h3><p>Reintentar o cambiar el período, nunca un callejón.</p></li>
+          <li><span class="num">05</span><h3>El archivo no se pierde</h3><p>Todo lo generado queda en Perfil › Documentos.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 · FLUJO -->
+    <section class="block" aria-labelledby="flujo">
+      <div class="block__head">
+        <span class="num">03</span>
+        <h2 id="flujo">Flujo</h2>
+      </div>
+      <div class="block__body">
+        <p>
+          La descarga arranca en la lista de movimientos, que abre con el resumen de gasto del mes. Los atajos de período
+          cubren los casos comunes: «últimos 3 meses» calza con el trimestre del contador y «este año» resuelve los impuestos
+          en un toque.
+        </p>
+        <figure>
+          <div class="media" style="--ratio: 1990 / 754">
+            <img src="../assets/img/uiux/flujo.webp" alt="Diagrama del flujo: movimientos, descargar, elegir período, revisar, generar el PDF y abrirlo o compartirlo, con las salidas de rango vacío y error con reintento" loading="lazy">
+          </div>
+          <figcaption class="media-caption">El flujo, con las dos salidas que se pueden romper: un rango sin movimientos y un error al generar el PDF.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 · PROTOTIPO -->
+    <section class="block" aria-labelledby="prototipo">
+      <div class="block__head">
+        <span class="num">04</span>
+        <h2 id="prototipo">Prototipo</h2>
+      </div>
+      <div class="block__body">
+        <p>Prototipo de alta fidelidad en Figma, en inglés como pedía el reto, con componentes y variantes para cada estado del selector de período.</p>
+        <div class="screens">
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/movimientos.webp" alt="Pantalla de movimientos con el resumen de gasto del mes y el botón Download transactions" loading="lazy"></div>
+            <figcaption class="media-caption">Movimientos: el resumen del mes y la descarga, donde ya se está mirando.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/periodo.webp" alt="Pantalla Select period con cinco atajos de período y los campos From y To" loading="lazy"></div>
+            <figcaption class="media-caption">Período: atajos frecuentes o un rango propio.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/revisar.webp" alt="Pantalla Review your document con período, número de movimientos, formato y cuenta" loading="lazy"></div>
+            <figcaption class="media-caption">Revisión: qué se va a descargar, antes de generarlo.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/listo.webp" alt="Pantalla Your PDF is ready con el archivo y los botones Share y Save to device" loading="lazy"></div>
+            <figcaption class="media-caption">Listo: el archivo y dónde queda guardado.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/error.webp" alt="Pantalla de error con los botones Try again y Change time period" loading="lazy"></div>
+            <figcaption class="media-caption">Error: siempre con una salida.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 390 / 844"><img src="../assets/img/uiux/documentos.webp" alt="Pantalla Documents con la lista de exportaciones generadas" loading="lazy"></div>
+            <figcaption class="media-caption">Documentos: todo lo generado, en Perfil.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · PRUEBAS -->
+    <section class="block" aria-labelledby="pruebas">
+      <div class="block__head">
+        <span class="num">05</span>
+        <h2 id="pruebas">Pruebas de usabilidad</h2>
+      </div>
+      <div class="block__body">
+        <p>
+          Probé el prototipo con 9 personas: 4 en sesiones conmigo, pensando en voz alta, y 5 por su cuenta en Maze. Las mismas
+          tres tareas: descargar el mes pasado, descargar un rango de fechas y encontrar los documentos.
+        </p>
+        <dl class="stats">
+          <div><dt>9 de 9</dt><dd>completaron todas las tareas</dd></div>
+          <div><dt>8 de 9</dt><dd>dijeron que usarían la función</dd></div>
+          <div><dt>1 de 4</dt><dd>eligió «Last month» a la primera: el punto más débil</dd></div>
+        </dl>
+        <figure>
+          <div class="media" style="--ratio: 16 / 9">
+            <img src="../assets/img/uiux/mapa-calor.webp" alt="Mapas de calor de Maze sobre la pantalla Select period: 3 de 5 personas probaron varias opciones antes de elegir Last month" loading="lazy">
+          </div>
+          <figcaption class="media-caption">Mapas de calor de Maze en «Select period»: los toques se reparten antes de llegar a «Last month».</figcaption>
+        </figure>
+        <ol class="phases">
+          <li>
+            <span class="num">H1</span>
+            <h3>«Last month» pasa desapercibido</h3>
+            <p>3 de 4 fueron primero a «Custom range», y en Maze fue la tarea con más clics perdidos (27,7 %). Propuesta: «This month» y «Last month» como botones grandes, con el rango personalizado aparte.</p>
+          </li>
+          <li>
+            <span class="num">H2</span>
+            <h3>No queda claro dónde se guarda el PDF</h3>
+            <p>Hubo quien tocó «Share» para guardar, y 2 de 5 buscaron los documentos dentro de la descarga. Propuesta: «Save to device» como botón principal y un acceso directo a Documentos al terminar.</p>
+          </li>
+          <li>
+            <span class="num">H3</span>
+            <h3>El calendario no dice cómo moverse</h3>
+            <p>Flechas pequeñas y un paso de «From» a «To» que pasa inadvertido. Un problema menor. Propuesta: flechas de 44 × 44 px, el nombre del mes tocable y un aviso «Ahora elige la fecha final».</p>
+          </li>
+        </ol>
+        <blockquote class="quote">
+          «Ojalá fuera tan fácil en todas las apps de banco.»
+          <cite>Participante en Maze</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <a class="next" href="dissonance.html">
+      <span>
+        <span class="next__label">Volver al principio — 01</span>
+        <span class="next__title">Dissonance</span>
+      </span>
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </main>
+
+  <!-- ✏️ EDITAR: correo, LinkedIn y CV -->
+  <footer class="contact" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap contact__inner">
+      <p class="contact__label">Contacto</p>
+      <h2 id="contacto-title">Hablemos de tu próximo proyecto.</h2>
+      <div class="contact__links">
+        <a href="mailto:pascualtobias@gmail.com">pascualtobias@gmail.com</a>
+        <a href="https://github.com/Pascual890" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="../assets/docs/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </div>
+      <div class="contact__foot">
+        <span>© <span data-year>2026</span> Pascualtobias Rendon</span>
+        <a href="#top">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

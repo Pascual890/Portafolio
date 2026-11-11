@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selva que alimenta — Pascualtobias Rendon</title>
+  <meta name="description" content="Selva que alimenta: experiencia de realidad virtual para Meta Quest 3, del plato servido en la ciudad a la chagra amazónica. Integración en Unity e interacciones.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Selva que alimenta — Pascualtobias Rendon">
+  <meta property="og:description" content="Una experiencia VR que lleva un plato amazónico de vuelta a su origen. Integré la experiencia en Unity para Meta Quest 3 y programé todas sus interacciones.">
+  <meta name="theme-color" content="#f3f2f2">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <script src="../assets/js/main.js?v=4" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="../index.html">Pascualtobias Rendon</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html#proyectos" aria-current="true">Proyectos</a></li>
+          <li><a href="../sobre-mi.html">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Fuentes: tu info (rol, visor, SDK, retos técnicos), la «Sinopsis VR» del equipo y la grabación dentro del visor
+       (_material/selva-que-alimenta). Fotogramas y clips: assets/img/selva, assets/video/selva-*.webm.
+       ✏️ Si sacas capturas nuevas dentro del Quest 3 (más resolución), reemplaza las de assets/img/selva con el mismo nombre. -->
+  <main id="contenido" class="wrap">
+    <div class="case-bar">
+      <a class="btn btn-ghost" href="../index.html#proyectos">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="square" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Todos los proyectos
+      </a>
+      <span class="case-bar__count">Proyecto 03 / 04</span>
+    </div>
+
+    <header class="case-head">
+      <span class="tag tag-accent">Realidad virtual · Meta Quest 3</span>
+      <h1 style="view-transition-name: title-selva-que-alimenta">Selva que alimenta</h1>
+      <p class="case-head__lead">
+        Una experiencia de realidad virtual que lleva al usuario desde un plato servido en la ciudad hasta la chagra amazónica
+        donde nacieron sus ingredientes. Yo la llevé a Unity: la integración en el visor y todas sus interacciones.
+      </p>
+    </header>
+
+    <dl class="case-meta">
+      <div><dt class="eyebrow">Mi rol</dt><dd>Integración VR e interacciones en Unity</dd></div>
+      <div><dt class="eyebrow">Plataforma</dt><dd>Meta Quest 3</dd></div>
+      <div><dt class="eyebrow">Herramientas</dt><dd>Unity · Meta XR SDK · C#</dd></div>
+      <div><dt class="eyebrow">Equipo</dt><dd>Con estudiantes de diseño gráfico</dd></div>
+      <div><dt class="eyebrow">Año</dt><dd>2026</dd></div>
+    </dl>
+
+    <div class="media" style="view-transition-name: cover-selva-que-alimenta">
+      <img src="../assets/img/selva/portada.webp" alt="Dentro del visor: un remero con sombrero lleva la canoa por el río, entre orillas de selva">
+    </div>
+
+    <!-- 01 · CONTEXTO -->
+    <section class="block" aria-labelledby="contexto">
+      <div class="block__head">
+        <span class="num">01</span>
+        <h2 id="contexto">Contexto</h2>
+      </div>
+      <div class="block__body">
+        <p>
+          Selva que alimenta es la pieza de realidad virtual de un proyecto más grande, hecho en conjunto con estudiantes de
+          diseño gráfico. Busca que la cocina amazónica se valore como herencia y no como «comida exótica», mostrando de dónde
+          viene lo que se come.
+        </p>
+        <p>
+          El equipo de diseño definió la historia, el arte y cada interacción en un documento. Mi trabajo fue convertir ese
+          documento en algo que funcionara dentro del visor.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 · MI ROL -->
+    <section class="block" aria-labelledby="rol">
+      <div class="block__head">
+        <span class="num">02</span>
+        <h2 id="rol">Mi rol</h2>
+      </div>
+      <div class="block__body">
+        <ul class="bullets">
+          <li><span><strong>Integración en Unity.</strong> Monté las escenas con los modelos y el arte del equipo de diseño y armé la experiencia para Meta Quest 3 con Meta XR SDK.</span></li>
+          <li><span><strong>Todas las interacciones.</strong> Agarrar, pellizcar, teletransportarse, subir y bajar de la canoa, cocinar y el menú que aparece en la mano.</span></li>
+          <li><span><strong>Manos y controles.</strong> La experiencia se juega con las manos o con controles, y se puede pasar de uno a otro.</span></li>
+        </ul>
+        <p class="block__note">
+          Los modelos, las ilustraciones, la historia y el diseño de las interacciones son del equipo de diseño gráfico; yo los
+          integré siguiendo sus directrices.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 · LA EXPERIENCIA -->
+    <section class="block" aria-labelledby="experiencia">
+      <div class="block__head">
+        <span class="num">03</span>
+        <h2 id="experiencia">La experiencia</h2>
+      </div>
+      <div class="block__body">
+        <p>Un recorrido hacia atrás: del plato a la tierra donde se cultivó, para volver a prepararlo donde nació.</p>
+        <ol class="flow">
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/restaurante.webp" alt="Un Inchicapí servido sobre la mesa de un restaurante" loading="lazy"></div>
+            <span class="num">01</span>
+            <h3>Restaurante</h3>
+            <p>Un Inchicapí servido en la ciudad. Al tomar la cuchara, la escena se detiene: ¿de dónde viene este plato?</p>
+          </li>
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/rio.webp" alt="Vista desde la canoa avanzando por el río" loading="lazy"></div>
+            <span class="num">02</span>
+            <h3>Río</h3>
+            <p>Una canoa lleva al usuario río arriba y se detiene en cada parada.</p>
+          </li>
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/canasto.webp" alt="Mano virtual sosteniendo el canasto junto al muelle" loading="lazy"></div>
+            <span class="num">03</span>
+            <h3>Chagras</h3>
+            <p>En dos chagras se cosechan los ingredientes, maíz, maní, yuca y sacha culantro, y van al canasto.</p>
+          </li>
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/maloca.webp" alt="La maloca, casa comunal de techo de paja, vista desde la canoa" loading="lazy"></div>
+            <span class="num">04</span>
+            <h3>Maloca</h3>
+            <p>La casa comunal, donde espera la olla en el fogón.</p>
+          </li>
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/olla.webp" alt="Manos mezclando con el cucharón una sopa amarilla dentro de la olla" loading="lazy"></div>
+            <span class="num">05</span>
+            <h3>La olla</h3>
+            <p>Se echan los ingredientes del canasto y se mezcla con el cucharón.</p>
+          </li>
+          <li>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/listo.webp" alt="Mensaje flotante: ¡El inchicapi está listo!, sobre la olla" loading="lazy"></div>
+            <span class="num">06</span>
+            <h3>Listo</h3>
+            <p>El plato del restaurante, preparado ahora donde nació.</p>
+          </li>
+        </ol>
+        <figure>
+          <div class="media">
+            <video src="../assets/video/selva-canoa.webm" poster="../assets/img/selva/portada.webp" autoplay muted loop playsinline preload="metadata" aria-label="Recorrido en canoa por el río dentro del visor"></video>
+          </div>
+          <figcaption class="media-caption">Rumbo a la maloca. Grabación dentro del visor.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 · INTERACCIONES -->
+    <section class="block" aria-labelledby="interacciones">
+      <div class="block__head">
+        <span class="num">04</span>
+        <h2 id="interacciones">Del documento al visor</h2>
+      </div>
+      <div class="block__body">
+        <p>El documento de diseño describía cada interacción como un gesto y su resultado. Así quedaron en Unity.</p>
+        <dl class="gestures">
+          <div><dt>Tomar la cuchara</dt><dd>La escena se detiene y aparece la pregunta que inicia el viaje.</dd></div>
+          <div><dt>Pellizcar un botón flotante</dt><dd>«Iniciar recorrido al origen», «Subir a la canoa», «Bajar de la canoa».</dd></div>
+          <div><dt>Subir a la canoa</dt><dd>La canoa recorre el río sola y para en cada chagra y en la maloca.</dd></div>
+          <div><dt>Apuntar y soltar</dt><dd>Teletransporte con arco y círculo de aterrizaje.</dd></div>
+          <div><dt>Agarrar un ingrediente</dt><dd>Se cosecha y va al canasto.</dd></div>
+          <div><dt>Echar el canasto en la olla, mezclar</dt><dd>La sopa se prepara con el movimiento del cucharón.</dd></div>
+          <div><dt>Girar la mano</dt><dd>Aparece el menú con el mapa del recorrido: dónde estás y qué paradas faltan.</dd></div>
+        </dl>
+        <div class="media-grid">
+          <figure>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/pregunta.webp" alt="Panel flotante en el restaurante: ¿Alguna vez te has preguntado cuál es el origen de los ingredientes de este plato?, con el botón Iniciar recorrido al origen" loading="lazy"></div>
+            <figcaption class="media-caption">La pregunta que abre el recorrido.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/mapa.webp" alt="Mapa del recorrido flotando junto a la mano: Inicio, Chagra 1, Chagra 2 y Maloca, con la parada actual marcada" loading="lazy"></div>
+            <figcaption class="media-caption">El mapa del recorrido, en la mano.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/teletransporte.webp" alt="Muelle de madera con el círculo azul de aterrizaje del teletransporte" loading="lazy"></div>
+            <figcaption class="media-caption">Teletransporte en el muelle.</figcaption>
+          </figure>
+          <figure>
+            <div class="media" style="--ratio: 16 / 9"><img src="../assets/img/selva/bajar-canoa.webp" alt="Panel: Llegaste a la Chagra 1. Presiona el botón para bajar de la canoa, y la mano señalando el botón" loading="lazy"></div>
+            <figcaption class="media-caption">Bajar de la canoa en la Chagra 1.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · RETOS TÉCNICOS -->
+    <section class="block" aria-labelledby="retos">
+      <div class="block__head">
+        <span class="num">05</span>
+        <h2 id="retos">Retos técnicos</h2>
+      </div>
+      <div class="block__body">
+        <ol class="phases">
+          <li>
+            <span class="num">5.1</span>
+            <h3>Manos y controles a la vez</h3>
+            <p>
+              El framework de interacción de Meta apagaba el tracking de manos apenas detectaba un control conectado, aunque el
+              usuario lo hubiera soltado. En vez de modificar el SDK, inyecté en tiempo de ejecución una condición propia: la
+              pregunta pasó de «¿hay un control?» a «¿el control está en la mano?». Los dos modos conviven sin tocar código de terceros.
+            </p>
+          </li>
+          <li>
+            <span class="num">5.2</span>
+            <h3>Un terreno compartido entre dos equipos</h3>
+            <p>
+              El terreno era un archivo binario que dos equipos editaban en ramas distintas, y tocarlo a mano garantizaba
+              conflictos al fusionar. Hice una herramienta de editor que aplica el ajuste por código, siempre igual, y documenté
+              cómo reconciliarlo en cada fusión.
+            </p>
+          </li>
+          <li>
+            <span class="num">5.3</span>
+            <h3>Una voz que se oiga en una sala con ruido</h3>
+            <p>
+              En ambientes ruidosos la voz no se escuchaba, y en Unity subir el volumen de un AudioSource por encima de 1 no tiene
+              efecto. Escribí un filtro de audio propio que amplifica la voz y curva los picos en vez de cortarlos, para que suene
+              más fuerte sin distorsión audible.
+            </p>
+          </li>
+        </ol>
+        <figure>
+<pre class="code" aria-label="Fragmento del filtro de audio en C#"><code><span class="code__c">// Por cada muestra: amplificar y curvar los picos (soft clipping)</span>
+float x = muestra * ganancia;
+float a = Mathf.Abs(x);
+if (a &gt; umbral)
+    a = umbral + (1f - umbral) * Tanh((a - umbral) / (1f - umbral));
+muestra = Mathf.Sign(x) * a;</code></pre>
+          <figcaption class="media-caption">El núcleo del filtro, dentro de <code>OnAudioFilterRead</code>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 06 · RESULTADO -->
+    <section class="block" aria-labelledby="resultado">
+      <div class="block__head">
+        <span class="num">06</span>
+        <h2 id="resultado">Resultado</h2>
+      </div>
+      <div class="block__body">
+        <p>
+          La experiencia completa corre en Meta Quest 3, del restaurante a la maloca, con las manos o con controles.
+          Se presentó en la muestra de proyectos de diseño de noviembre de 2026.
+        </p>
+        <p class="block__note">
+          Las imágenes son de una build anterior: la versión presentada sumó menús nuevos y más assets del equipo de diseño.
+        </p>
+        <figure>
+          <div class="media">
+            <video src="../assets/video/selva-olla.webm" poster="../assets/img/selva/olla.webp" autoplay muted loop playsinline preload="metadata" aria-label="Mezclando el Inchicapí en la olla de la maloca"></video>
+          </div>
+          <figcaption class="media-caption">En la maloca: mezclar hasta que el Inchicapí está listo. Grabación dentro del visor.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <a class="next" href="movimientos-pdf.html">
+      <span>
+        <span class="next__label">Siguiente proyecto — 04</span>
+        <span class="next__title">Movimientos en PDF</span>
+      </span>
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </main>
+
+  <!-- ✏️ EDITAR: correo, LinkedIn y CV -->
+  <footer class="contact" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap contact__inner">
+      <p class="contact__label">Contacto</p>
+      <h2 id="contacto-title">Hablemos de tu próximo proyecto.</h2>
+      <div class="contact__links">
+        <a href="mailto:pascualtobias@gmail.com">pascualtobias@gmail.com</a>
+        <a href="https://github.com/Pascual890" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="../assets/docs/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </div>
+      <div class="contact__foot">
+        <span>© <span data-year>2026</span> Pascualtobias Rendon</span>
+        <a href="#top">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

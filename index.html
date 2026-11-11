@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pascualtobias Rendon — Diseño interactivo, VR y AR</title>
+  <meta name="description" content="Portafolio de Pascualtobias Rendon: experiencias interactivas, realidad virtual, realidad aumentada y UI/UX.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pascualtobias Rendon — Diseño interactivo">
+  <meta property="og:description" content="Diseño mundos interactivos en los que se puede entrar.">
+  <meta property="og:locale" content="es_ES">
+  <meta name="theme-color" content="#f3f2f2">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=6">
+  <script src="assets/js/main.js?v=4" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">Pascualtobias Rendon</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero wrap" data-hero aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__label">Diseño interactivo · Desarrollo XR</p>
+        <h1 class="hero__title" id="hero-title">Diseño interfaces y construyo mundos inmersivos<span>.</span></h1>
+        <p class="hero__lead">
+          Desarrollo experiencias en realidad aumentada, realidad virtual y web, y diseño cómo se sienten al usarlas:
+          un libro cuyos planos cobran volumen, un viaje en VR a la Amazonía o el sitio de una empresa que esconde algo.
+        </p>
+
+        <!-- Figura de partículas: se transforma entre objetos de tus proyectos
+             (visor VR, libro AR, atractor generativo, casco, móvil). El puntero empuja las partículas.
+             Solo en pantallas anchas; las figuras se definen en main.js (SHAPES). -->
+        <div class="hero__object" data-particles aria-hidden="true">
+          <canvas class="hero__canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Cinta de disciplinas: siempre en movimiento, como en el diseño de Claude Design -->
+      <div class="marquee">
+        <div class="marquee__track">
+          <ul class="marquee__run" aria-label="Disciplinas">
+            <li>Realidad aumentada</li>
+            <li>Realidad virtual</li>
+            <li>UI/UX</li>
+            <li>Narrativa interactiva</li>
+          </ul>
+          <ul class="marquee__run" aria-hidden="true">
+            <li>Realidad aumentada</li>
+            <li>Realidad virtual</li>
+            <li>UI/UX</li>
+            <li>Narrativa interactiva</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== PROYECTOS =====================
+         Escritorio: lista a la izquierda + vista previa fija a la derecha.
+         Móvil: cada fila muestra su propia imagen.
+         ✏️ Para poner tus imágenes, sustituye cada <span class="slot">…</span>
+            por <img src="assets/img/…" alt=""> (alt vacío: el título ya está en la fila). -->
+    <section class="work wrap" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="section-head">
+        <span class="num">(01)</span>
+        <h2 id="proyectos-title">Proyectos</h2>
+      </div>
+
+      <div class="work__grid" data-work>
+        <div class="work__list">
+
+          <a class="work-row" href="proyectos/dissonance.html" data-work-row data-vt="dissonance" data-cursor="Ver proyecto"
+             data-line="El sitio de Atlas Corporation, el Acto II de una experiencia de terror cósmico. Hecho en HTML, CSS y JavaScript. Mejor producto de Experiencias interactivas en el DEX 2026.">
+            <div class="work-row__media media" style="--ratio: 4 / 3" aria-hidden="true">
+              <img src="assets/img/dissonance/portada.webp" alt="">
+            </div>
+            <span class="work-row__num">01</span>
+            <span class="work-row__body">
+              <span class="work-row__title">Dissonance</span>
+              <span class="work-row__kind">Narrativa interactiva · Desarrollo web</span>
+            </span>
+            <span class="work-row__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+
+
+          <a class="work-row" href="proyectos/pasos-de-tradicion.html" data-work-row data-vt="pasos-de-tradicion" data-cursor="Ver proyecto"
+             data-line="El Códice de los Pasos: un libro en realidad aumentada sobre los oficios de la Semana Santa en Santa Fe de Antioquia. Hecho en Unity.">
+            <div class="work-row__media media" style="--ratio: 4 / 3" aria-hidden="true">
+              <img src="assets/img/pasos/codice.jpg" alt="">
+            </div>
+            <span class="work-row__num">02</span>
+            <span class="work-row__body">
+              <span class="work-row__title">Pasos de tradición</span>
+              <span class="work-row__kind">Realidad aumentada · Desarrollo en Unity</span>
+            </span>
+            <span class="work-row__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+
+
+          <a class="work-row" href="proyectos/selva-que-alimenta.html" data-work-row data-vt="selva-que-alimenta" data-cursor="Ver proyecto"
+             data-line="Una experiencia VR que lleva un plato amazónico de vuelta a su origen. Hecha en Unity para Meta Quest 3.">
+            <div class="work-row__media media" style="--ratio: 4 / 3" aria-hidden="true">
+              <img src="assets/img/selva/portada.webp" alt="">
+            </div>
+            <span class="work-row__num">03</span>
+            <span class="work-row__body">
+              <span class="work-row__title">Selva que alimenta</span>
+              <span class="work-row__kind">Realidad virtual · Integración en Unity</span>
+            </span>
+            <span class="work-row__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+
+
+          <a class="work-row" href="proyectos/movimientos-pdf.html" data-work-row data-vt="movimientos-pdf" data-cursor="Ver proyecto"
+             data-line="Reto de diseño: descargar los movimientos de un banco digital en PDF, sin salir de la app. Diseñado en Figma y probado con 9 personas.">
+            <div class="work-row__media media" style="--ratio: 4 / 3" aria-hidden="true">
+              <img src="assets/img/uiux/portada.webp" alt="">
+            </div>
+            <span class="work-row__num">04</span>
+            <span class="work-row__body">
+              <span class="work-row__title">Movimientos en PDF</span>
+              <span class="work-row__kind">Reto de diseño · UI/UX</span>
+            </span>
+            <span class="work-row__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+
+        </div>
+
+        <div class="work-preview">
+          <div class="work-preview__frame">
+            <div class="work-preview__item is-active" data-work-preview="dissonance" aria-hidden="true">
+              <img src="assets/img/dissonance/portada.webp" alt="">
+            </div>
+            <div class="work-preview__item" data-work-preview="pasos-de-tradicion" aria-hidden="true">
+              <img src="assets/img/pasos/codice.jpg" alt="">
+            </div>
+            <div class="work-preview__item" data-work-preview="selva-que-alimenta" aria-hidden="true">
+              <img src="assets/img/selva/portada.webp" alt="">
+            </div>
+            <div class="work-preview__item" data-work-preview="movimientos-pdf" aria-hidden="true">
+              <img src="assets/img/uiux/portada.webp" alt="">
+            </div>
+          </div>
+          <div class="work-preview__footer">
+            <p class="work-preview__caption" data-work-caption>El sitio de Atlas Corporation, el Acto II de una experiencia de terror cósmico. Hecho en HTML, CSS y JavaScript. Mejor producto de Experiencias interactivas en el DEX 2026.</p>
+            <a class="btn btn-primary" href="proyectos/dissonance.html" data-work-cta data-vt="dissonance">
+              Ver proyecto
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== PERFIL ===================== -->
+    <section class="profile wrap" id="perfil" aria-labelledby="perfil-title">
+      <div class="section-head">
+        <span class="num">(02)</span>
+        <h2 id="perfil-title">Perfil</h2>
+      </div>
+
+      <div class="profile__grid">
+        <div class="profile__intro">
+          <p class="profile__statement">
+            Mi formación mezcla narrativa, arte generativo y desarrollo. Por eso pienso cada proyecto como una
+            experiencia completa: desde el primer gesto de la persona hasta lo que recuerda después.
+          </p>
+          <!-- ✏️ EDITAR: qué buscas ahora (prácticas, primer empleo o freelance) y en qué tipo de equipo -->
+          <p class="profile__seek todo">Añadir qué buscas ahora: prácticas, primer empleo o freelance, y en qué tipo de equipo.</p>
+        </div>
+
+        <dl class="specs">
+          <div class="specs__row"><dt>Medios</dt><dd>Realidad virtual, realidad aumentada, apps móviles y web</dd></div>
+          <div class="specs__row"><dt>Herramientas</dt><dd>Unity, 8th Wall Studio, Figma</dd></div>
+          <div class="specs__row"><dt>Código</dt><dd>C#, JavaScript, p5.js</dd></div>
+          <div class="specs__row"><dt>Métodos</dt><dd>Investigación, prototipado, pruebas de usabilidad</dd></div>
+          <div class="specs__row"><dt>Idiomas</dt><dd>Español, inglés</dd></div>
+        </dl>
+      </div>
+
+      <div class="process">
+        <h3 class="process__label">Proceso</h3>
+        <ol class="process__steps">
+          <li>
+            <h4><span>1</span>Investigar</h4>
+            <p>Entender quién lo va a usar, dónde y qué espera encontrar.</p>
+          </li>
+          <li>
+            <h4><span>2</span>Prototipar</h4>
+            <p>Armar el recorrido con versiones simples antes de pulir lo visual.</p>
+          </li>
+          <li>
+            <h4><span>3</span>Probar</h4>
+            <p>Con personas reales y en el dispositivo final: el visor, el teléfono o el navegador.</p>
+          </li>
+          <li>
+            <h4><span>4</span>Iterar</h4>
+            <p>Corregir lo que confunde y dejar registro de cada decisión.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===================== CONTACTO ===================== -->
+  <!-- ✏️ EDITAR: correo, LinkedIn y CV (coloca tu CV en assets/docs/CV.pdf) -->
+  <footer class="contact" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap contact__inner">
+      <p class="contact__label">Contacto</p>
+      <h2 id="contacto-title">Hablemos de tu próximo proyecto.</h2>
+      <div class="contact__links">
+        <a href="mailto:pascualtobias@gmail.com">pascualtobias@gmail.com</a>
+        <a href="https://github.com/Pascual890" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="assets/docs/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </div>
+      <div class="contact__foot">
+        <span>© <span data-year>2026</span> Pascualtobias Rendon</span>
+        <a href="#top">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
