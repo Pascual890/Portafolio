@@ -228,21 +228,11 @@
             <span class="num">5.3</span>
             <h3>Una voz que se oiga en una sala con ruido</h3>
             <p>
-              En ambientes ruidosos la voz no se escuchaba, y en Unity subir el volumen de un AudioSource por encima de 1 no tiene
-              efecto. Escribí un filtro de audio propio que amplifica la voz y curva los picos en vez de cortarlos, para que suene
-              más fuerte sin distorsión audible.
+              En una sala con ruido la voz no se escuchaba, y Unity no deja subir el volumen más allá de su máximo. Hice un filtro
+              de audio propio que amplifica la voz sin que se distorsione.
             </p>
           </li>
         </ol>
-        <figure>
-<pre class="code" aria-label="Fragmento del filtro de audio en C#"><code><span class="code__c">// Por cada muestra: amplificar y curvar los picos (soft clipping)</span>
-float x = muestra * ganancia;
-float a = Mathf.Abs(x);
-if (a &gt; umbral)
-    a = umbral + (1f - umbral) * Tanh((a - umbral) / (1f - umbral));
-muestra = Mathf.Sign(x) * a;</code></pre>
-          <figcaption class="media-caption">El núcleo del filtro, dentro de <code>OnAudioFilterRead</code>.</figcaption>
-        </figure>
       </div>
     </section>
 
@@ -278,7 +268,7 @@ muestra = Mathf.Sign(x) * a;</code></pre>
     </a>
   </main>
 
-  <!-- ✏️ EDITAR: correo, LinkedIn y CV -->
+  <!-- Contacto: correo, GitHub y LinkedIn -->
   <footer class="contact" id="contacto" aria-labelledby="contacto-title">
     <div class="wrap contact__inner">
       <p class="contact__label">Contacto</p>
@@ -286,8 +276,7 @@ muestra = Mathf.Sign(x) * a;</code></pre>
       <div class="contact__links">
         <a href="mailto:pascualtobias@gmail.com">pascualtobias@gmail.com</a>
         <a href="https://github.com/Pascual890" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="../assets/docs/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+        <a href="https://www.linkedin.com/in/pascualtobias-rendon-718495106" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
       <div class="contact__foot">
         <span>© <span data-year>2026</span> Pascualtobias Rendon</span>

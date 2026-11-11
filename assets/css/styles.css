@@ -1218,23 +1218,6 @@ video {
   color: var(--color-neutral-800);
 }
 
-/* Fragmento de código */
-.code {
-  margin: 0;
-  padding: 20px 22px;
-  overflow-x: auto;
-  background: var(--color-text);
-  color: var(--color-bg);
-  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
-  font-size: 14px;
-  line-height: 1.65;
-  border-left: 4px solid var(--color-accent);
-}
-
-.code__c {
-  color: var(--color-neutral-500);
-}
-
 /* Galería: una foto vertical grande y el resto en cuadrícula */
 .gallery {
   display: grid;
