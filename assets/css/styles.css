@@ -698,20 +698,22 @@ video {
   flex: 2 1 440px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 .about__statement {
-  font-size: clamp(22px, 2.4vw, 32px);
-  line-height: 1.28;
-  letter-spacing: -0.015em;
+  font-family: var(--font-heading);
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
   text-wrap: pretty;
 }
 
 .about__bio {
-  max-width: 620px;
-  font-size: 16px;
-  line-height: 1.6;
+  max-width: 62ch;
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.55;
   color: var(--color-neutral-800);
   text-wrap: pretty;
 }
@@ -722,13 +724,43 @@ video {
   gap: 8px;
 }
 
+/* Áreas de trabajo: nombre grande y una línea de qué hago en cada una */
+.focus {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+}
+
+.focus li {
+  padding: 18px 0 20px;
+  border-top: 2px solid var(--color-divider);
+}
+
+.focus strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.focus p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-neutral-800);
+  text-wrap: pretty;
+}
+
 .timeline li {
   display: grid;
   grid-template-columns: 9rem minmax(0, 1fr);
   gap: 4px 24px;
-  padding: 14px 0;
+  padding: 16px 0;
   border-top: 2px solid var(--color-divider);
-  font-size: 16px;
+  font-size: 19px;
+  line-height: 1.4;
 }
 
 .timeline li:last-child {
@@ -736,11 +768,11 @@ video {
 }
 
 .timeline strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .timeline span {
-  color: var(--color-neutral-700);
+  color: var(--color-text);
 }
 
 .timeline .todo {
@@ -1375,15 +1407,15 @@ video {
 }
 
 .specs dt {
-  padding-top: 3px;
-  font-size: 12px;
-  letter-spacing: 0.1em;
+  padding-top: 5px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-neutral-700);
 }
 
 .specs dd {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.45;
 }
 
@@ -1630,6 +1662,7 @@ video {
   .versus,
   .flow,
   .cards,
+  .focus,
   .gestures > div {
     grid-template-columns: minmax(0, 1fr);
   }
